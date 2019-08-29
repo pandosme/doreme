@@ -1,0 +1,10 @@
+db/*
+local/*
+certs/*.pem
+mosquitto/users
+nodered/settings.js
+nodered/.config.json
+nodered/.sessions.json
+nodered/flows_cred.json
+nodered/context/*
+nodered/*.backup
