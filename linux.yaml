@@ -17,7 +17,6 @@ services:
   mongo:
     container_name: mongo
     restart: always
-#    user: '0'
     environment:
       - MONGODB_AUTH=false
     image: mongo
