@@ -7,11 +7,16 @@ If you do not have Docker or GIT isntalled, read preperations.md
 ## Clone respository
 Go to your home directory (preferably)
 ```
-git clone https://github.com/pandosme/visitour.git 
+git clone https://github.com/pandosme/doreme.git 
 ```
 Change directory
 ```
-cd visitour
+cd doreme
+```
+## Set priviliges
+For the shared volums to be accessible in the container, change the privilige levels
+```
+sudo chmod -R 666 *
 ```
 
 ## Default settings
@@ -28,13 +33,12 @@ cp mosquitto/default/* mosquitto
 cp certs/default/* certs
 ```
 
-## Start Visitour
-Note that the first time Docker will fetch the required containers and it may take some time
+## Start Containers
+Start docker containers using the appropriate yaml-file linux.yaml or rpi.yaml.  Note that the first time Docker will fetch the required containers and it may take some time.
 ```
-sudo docker-compose -f rpi.yaml up
+sudo docker-compose -f [playform].yaml up
 ```
-## Stop Visitour
+## Stop Containers
 ```
-sudo docker-compose -f rpi.yaml down
+sudo docker-compose -f [platform].yaml down
 ```
-
