@@ -1,8 +1,8 @@
 # Overview
 Installs docker container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  Nore-Red is already configured and can be tweaked later.
 The default user is `admin` with default password `pass`.
-## Dock & GIT
-If you do not have Docker or GIT isntalled, read preperations.md
+## Docker & GIT
+If you do not have Docker or GIT installed, read preperations.md
 
 ## Clone respository
 Go to your home directory (preferably)
@@ -34,7 +34,7 @@ cp certs/default/* certs
 ```
 
 ## Start Containers
-Start docker containers using the appropriate yaml-file linux.yaml or rpi.yaml.  Note that the first time Docker will fetch the required containers and it may take some time.
+Start docker containers using the appropriate yaml-file [linux.yaml] or [rpi.yaml].  Note that the first time Docker will fetch the required containers and it may take some time.
 ```
 sudo docker-compose -f [playform].yaml up
 ```
