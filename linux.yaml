@@ -10,8 +10,7 @@ services:
       - '443:1880'
     volumes:
       - ./nodered:/data
-      - ./certs:/certs
-      - ./local:/local
+      - ./certs:/certs      
     links:
       - mongo
       - broker
