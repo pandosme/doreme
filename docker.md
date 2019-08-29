@@ -4,7 +4,7 @@ docker run -d --rm --name broker --restart always -p 1883:1883 -p 8883:8883 -v m
 ```
 ## Mongo
 ```
-docker run -d --rm --name mongo --restart always -p 27017:27017 -v db:/data/db mongo
+docker run -d --rm --name mongo --restart always -p 27017:27017 -v db:/data/db -e MONGODB_AUTH=false mongo
 ```
 ## Node-Red
 ```
