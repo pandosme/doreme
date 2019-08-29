@@ -8,5 +8,5 @@ docker run -d --rm --name mongo --restart always -p 27017:27017 -v db:/data/db m
 ```
 ## Node-Red
 ```
-docker run -d --rm --name nodered --restart always -p 80:1880 -p 443:1880 -v nodered:/data -v certs:/certs --link broker --link mongo  nodered/node-red-docker
+docker run -d --name nodered --restart always -p 80:1880 -p 443:1880 -v nodered:/data -v certs:/certs --link broker --link mongo  nodered/node-red-docker
 ```
