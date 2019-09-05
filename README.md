@@ -32,7 +32,11 @@ cp certs/default/* certs
 Start docker containers using the appropriate yaml-file [linux.yaml] or [rpi.yaml].
 Note: The first time executing docker-compose, docker will fetch the required containers which may take some time.
 ```
-sudo docker-compose -f [playform].yaml up
+sudo docker-compose -f rpi.yaml up
+
+or
+
+sudo docker-compose -f linux.yaml up
 ```
 ## Stop Containers
 ```
