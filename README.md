@@ -13,11 +13,6 @@ Change directory
 ```
 cd doreme
 ```
-## Set priviliges
-For the shared volums to be accessible in the container, change the privilige levels
-```
-sudo chmod -R 666 *
-```
 
 ## Default settings
 There are default settings, containing default passwords and certificates that needs to be set by copying some default files.  These files will be upsted when resetting passwords and installing CA-signed certificates.
