@@ -1,6 +1,6 @@
 ## Mosquitto
 ```
-docker run -d --name broker --restart always -p 1883:1883 -p 8883:8883 -v $(pwd)/mosquitto:/mosquitto -v $(pwd)/certs:/certs eclipse-mosquitto
+docker run -d --name broker --restart always -u 0 -p 1883:1883 -p 8883:8883 -v $(pwd)/mosquitto:/mosquitto -v $(pwd)/certs:/certs eclipse-mosquitto
 ```
 ## Mongo
 ```
