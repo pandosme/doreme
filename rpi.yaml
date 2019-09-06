@@ -4,6 +4,7 @@ services:
     container_name: nodered
     restart: always
     image: nodered/node-red-docker:rpi
+    user: '0'    
     ports:
       - '80:1880'
       - '443:1880'
@@ -20,6 +21,7 @@ services:
     environment:
       - MONGODB_AUTH=false
     image: webhippie/mongodb
+    user: '0'
     volumes:
       - ./db:/var/lib/mongodb
     ports:
@@ -28,6 +30,7 @@ services:
     container_name: broker
     restart: always
     image: eclipse-mosquitto
+    user: '0'    
     ports:
       - '1883:1883'
       - '1884:1884'
