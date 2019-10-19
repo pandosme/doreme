@@ -3,7 +3,7 @@ services:
   nodered:
     container_name: nodered
     restart: always
-    image: nodered/node-red-docker:rpi
+    image: nodered/node-red
     user: '0'    
     ports:
       - '80:1880'
@@ -24,8 +24,8 @@ services:
     user: '0'
     volumes:
       - ./db:/var/lib/mongodb
-    ports:
-      - '27017:27017'
+#    ports:
+#      - '27017:27017'
   broker:
     container_name: broker
     restart: always
