@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nodered:
+    container_name: nodered
+    restart: always
+    image: nodered/node-red
+    user: '0'
+    ports:
+      - '80:1880'
+      - '443:1880'
