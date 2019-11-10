@@ -8,3 +8,5 @@ services:
     ports:
       - '80:1880'
       - '443:1880'
+    volumes:
+      - ./nodered:/data   
