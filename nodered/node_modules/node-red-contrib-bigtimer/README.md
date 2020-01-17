@@ -18,8 +18,8 @@ toggle              - Manual toggle - no matter which mode (auto or manual) will
 default or auto     - return to auto state
 manual              - When using (1/0) to override output, this will stop reversion at schedule change)
 stop                - stop the scheduler - set the output off
-on_override         - manually override the on time (in minutes or hours and minutes - space separated)
-off_override        - manually override the off time (in minutes or hours and minutes - space separated)
+on_override         - manually override the on time (in minutes or hours and minutes - space separated i.e. inject "on_override 20:00" or just "on_override" to cancel)
+off_override        - manually override the off time (in minutes or hours and minutes - space separated i.e. inject "off_override 21:00" or just "off_override" to cancel)
 timer X [s m]       - Manual seconds timer sets the output on for X seconds (or minutes or hours)
 timeoff X (as above)
 

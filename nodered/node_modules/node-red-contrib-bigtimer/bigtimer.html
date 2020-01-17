@@ -794,7 +794,7 @@
     <h3>Manual Overrides</h3>
 	<p>The first two override messages (1/0) time-out after 24 hours (1440 minutes, user-settable) OR at the next change of schedule. If you have also selected "manual" - the outputs will NOT revert back at change of schedule (auto to reset).</p>
     <p>The schedule can be paused by the interface tick box or by the "manual" command (use the "auto" command to return to normal)</p>
-    <p>The on_override and off_override fields can be used to supercede the set inputs for on and off times (in minutes) - "on_override 20:15" for example (without the quotes) for 8:15pm. These settings are volatile, i.e. not restored when Node-Red is restarted. It may take up to a minute for these controls to take effect.</p>
+    <p>The on_override and off_override fields can be used to supercede the set inputs for on and off times (in minutes) - "on_override 20:15" for example (without the quotes) for 8:15pm. These settings are volatile, i.e. not restored when Node-Red is restarted. It may take up to a minute for these controls to take effect. Use for example "on_override" with no arguments to set the auto-on time back to normal.</p>
 	<p>Manual UTC is optional offset (hrs) in case you have a special reason not to have the right time on your computer! Normally 0.</p>
     <h3>Status Display</h3> 
    <p>Remember, the status display only updates once per minute unless in timer mode (seconds). If you have Bigtimer set to OFF you should see a black "No action today" message - if you use manual inject to override - it may take up to a minute for this message to re-appear.</p>

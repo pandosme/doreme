@@ -6,7 +6,7 @@ services:
     image: nodered/node-red
     user: '0'    
     ports:
-      - '80:1880'
+      - '1880:1880'
 #      - '443:1880'
     volumes:
       - ./nodered:/data
