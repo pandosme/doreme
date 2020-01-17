@@ -7,35 +7,8 @@ services:
     user: '0'    
     ports:
       - '1880:1880'
-#      - '443:1880'
     volumes:
       - ./nodered:/data
     links:
       - mongo
       - broker
-  mongo:
-    container_name: doreme_mongo
-    restart: always
-    environment:
-      - MONGODB_AUTH=false
-    image: webhippie/mongodb
-    user: '0'
-    volumes:
-      - ./db:/var/lib/mongodb
-    ports:
-      - '27017:27017'
-  broker:
-    container_name: doreme_broker
-    restart: always
-    image: eclipse-mosquitto
-    user: '0'    
-    ports:
-      - '1883:1883'
-      - '1884:1884'
-#      - '8883:8883'
-    volumes:
-      - ./mosquitto:/mosquitto
-#      - ./certs:/certs
-volumes:
-  certs:
-#  local:
