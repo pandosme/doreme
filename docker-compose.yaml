@@ -1,18 +1,5 @@
 version: '3'
 services:
-  nodered:
-    container_name: doreme_nodered
-    restart: always
-    image: nodered/node-red
-    user: '0'    
-    ports:
-      - '1880:1880'
-#      - '443:1880'
-    volumes:
-      - ./nodered:/data
-    links:
-      - mongo
-      - broker
   mongo:
     container_name: doreme_mongo
     restart: always
