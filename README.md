@@ -1,5 +1,7 @@
 # Overview
-This docker-compose (optimized for Raspberry Pi) includes container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  There are a number of non-default nodes including dashboard, bigtimer and Axis device node.  There is no authentication on any service.
+This docker-compose (optimized for Raspberry Pi) includes container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  Node-red includes a number of non-default nodes such as dashboard, bigtimer and Axis device node.
+
+There are no authentication on any service.  This can be added by editing nodered/settings.js and mosquitto/config/mosquitto.conf
 
 Default ports in docker-compose:
 1880: Noder-red
