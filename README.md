@@ -1,6 +1,11 @@
 # Overview
-Installs docker container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  Nore-Red is already configured and can be tweaked later.
-The default user is `admin` with default password `pass`.
+This docker-compose (optimized for Raspberry Pi) includes container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  There are a number of non-default nodes including dashboard, bigtimer and Axis device node.  There is no authentication on any service.
+
+Default ports in docker-compose:
+1880: Noder-red
+1883: Mosquitto broker
+27017: Mongo Database
+
 ## Docker & GIT
 If you do not have Docker or GIT installed, read preperations.md
 
@@ -14,31 +19,15 @@ Change directory
 cd doreme
 ```
 
-## Default settings
-There are default settings, containing default passwords and certificates that needs to be set by copying some default files.  These files will be upsted when resetting passwords and installing CA-signed certificates.
-
-Default user/password for both Node-Red & Mosquitto is admin/pass
-```
-cp nodered/default/* nodered
-```
-```
-cp mosquitto/default/* mosquitto
-```
-```
-cp certs/default/* certs
-```
-
 ## Start Containers
 Start docker containers using the appropriate yaml-file [linux.yaml] or [rpi.yaml].
 Note: The first time executing docker-compose, docker will fetch the required containers which may take some time.
 ```
-sudo docker-compose -f rpi.yaml up
-
-or
-
-sudo docker-compose -f linux.yaml up
+sudo docker-compose up -d
 ```
+Note: if you want to see all debug output from containers, remove the '-d'.  The containers will stop when you press ctrl-c
+
 ## Stop Containers
 ```
-sudo docker-compose -f [platform].yaml down
+sudo docker-compose down
 ```
