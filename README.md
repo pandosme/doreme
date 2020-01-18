@@ -1,18 +1,22 @@
 # Overview
-This docker-compose (optimized for Raspberry Pi) includes container for Node-Red, Mosquitto MQTT Broker and Mongo Database.  Node-red includes a number of non-default nodes such as dashboard, bigtimer and Axis device node.
+Optimized for Raspberry Pi and includes pre-configured container for Node-Red, Mosquitto Broker and Mongo Database.  Node-red also include a number of additional common nodes such as Axis device node and dashboard.
 
-There are no authentication on any service.  This can be added by editing nodered/settings.js and mosquitto/config/mosquitto.conf
+There is no authentication on any service.  Authentication is added for production systems by editing nodered/settings.js and mosquitto/config/mosquitto.conf
 
-Default ports in docker-compose:
+Open docker ports:
 1880: Noder-red
 1883: Mosquitto broker
 27017: Mongo Database
 
-## Docker & GIT
+## Install Docker & GIT
 If you do not have Docker or GIT installed, read preperations.md
 
-## Clone respository
-Go to your home directory (preferably)
+## Intallation
+Go to the pi home directory (preferably) 
+```
+cd /home/pi
+```
+Clone (fetch) the repository
 ```
 git clone https://github.com/pandosme/doreme.git 
 ```
@@ -22,7 +26,6 @@ cd doreme
 ```
 
 ## Start Containers
-Start docker containers using the appropriate yaml-file [linux.yaml] or [rpi.yaml].
 Note: The first time executing docker-compose, docker will fetch the required containers which may take some time.
 ```
 sudo docker-compose up -d
