@@ -1,12 +1,11 @@
 # Node-Red
-TBD
 
-## Changing password
+## Add password to node-red
 It is recommeded to reset the password for admin and user.  This requires generating password hashes that needs to be set in /nodered/settings.js.
 
-Generate new password hashes by logging into the container.
+If node.js is not installed on the you can log into a container to generate bcrcypt passwords hashes.
 ```
-sudo docker container exec -it nodered bash
+sudo docker container exec -it doreme_nodered bash
 ```
 You should now have a prompt 'node-red@########:~$' which means you are inside the container.
 
