@@ -12,6 +12,7 @@ Open docker ports:
 If you do not have Docker or GIT installed, read preperations.md
 
 ## Intallation
+Open a terminal to your RasPi with remote SSH or local terminal console.
 Go to the pi home directory (preferably) 
 ```
 cd /home/pi
