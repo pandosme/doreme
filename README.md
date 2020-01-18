@@ -40,4 +40,19 @@ sudo docker-compose down
 ## Examples
 To view and edit flows, go to http://<raspi-ip>:1880.  The dashboard is accessed on http://<raspi-ip>:1880/ui
 
-### Tab 
+### MQTT
+A dashboard form that publish to the local broker and a dashboard template that shows a subscription
+
+### Camera
+Dashboard controls that interacts with an Axis camera using the Axis device node
+  - Show snapshot
+  - Show Camera properies
+  - Slider to control color level
+  - Text input that updates image text overlay
+
+### Database
+Dashboard form and list that interacts with the local Mongo Database
+
+### API
+Example showing how to add a simple http api in Node-Red
+
