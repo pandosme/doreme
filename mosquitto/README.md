@@ -7,11 +7,18 @@ Ports
   - 1884 (WebSocket)
 
 ## Default user
-The file /mosquitto/users include a default user 'admin' with password 'pass'.  To enable this you must remove the comment (#) 
+The file ./mosquitto/users include a default user 'admin' with password 'pass'.
 
-### Create user
-Local users are stored the file /mosquitto/users.  Add users with mosquitto_passwd.
-Example creating user 'admin'. -c will create/overwrite the exsiting file
+To enable this user file you must edit the conf file
+
 ```
-mosquitto_passwd -c users admin
+nano ./mosquitto/config/moquitto.conf
+```
+Locte the line '#password_file /mosquitto/users' and remove the # in the beginning of the file.
+
+To add or modify users you need to install moquitto on the host and use mosquitto_passwd 
+
+Example creating user 'john'. Note that -c will create/overwrite the exsiting file
+```
+mosquitto_passwd -c users john
 ```
