@@ -4,9 +4,9 @@ Optimized for Raspberry Pi and includes pre-configured container for Node-Red, M
 There is no authentication on any service.  Authentication is added for production systems by editing nodered/settings.js and mosquitto/config/mosquitto.conf
 
 Open docker ports:
-  1880: Noder-red
-  1883: Mosquitto broker
-  27017: Mongo Database
+  * 1880: Noder-red
+  * 1883: Mosquitto broker
+  * 27017: Mongo Database
 
 ## Install Docker & GIT
 If you do not have Docker or GIT installed, read preperations.md
