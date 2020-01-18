@@ -1,2 +1,2 @@
 ## Mongo Database Storge
-This is the directory where mongo stores local database
+This is the directory where mongo stores the database
