@@ -1,12 +1,16 @@
 # Overview
-Optimized for Raspberry Pi and includes pre-configured container for Node-Red, Mosquitto Broker and Mongo Database.  Node-red also include a number of additional common nodes such as Axis device node and dashboard.
+Node-Red is already included the official Rasibian images.  If you only need Node-Red, use that.  More information can be found on https://nodered.org.  
 
-There is no authentication on any service.  Authentication is added for production systems by editing nodered/settings.js and mosquitto/config/mosquitto.conf
+This repository is to simplify installation when you need Noder-Red, Mosquitto MQTT broker and a Mongo database.  It also enable creating multiple instances on a single Rasberry Pi.  You can run this on any machine that have docker and docker-compose though it is optimized for Raspberry Pi.  It includes pre-configured container for Node-Red, Mosquitto Broker and Mongo Database.  Node-red also include a number of additional common nodes such as Axis device node and dashboard.
+
+There is no authentication on any service.  Authentication is added for production systems by editing nodered/settings.js and mosquitto/config/mosquitto.conf.
 
 Open docker ports:
   * 1880: Noder-red
   * 1883: Mosquitto broker
   * 27017: Mongo Database
+
+You can adjust the port numbers by editing docker-compose.yaml 
 
 ## Install Docker & GIT
 If you do not have Docker or GIT installed, read preperations.md
