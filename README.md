@@ -48,7 +48,8 @@ To view and edit flows, go to http://<raspi-ip>:1880.  The dashboard is accessed
 A dashboard form that publish to the local broker and a dashboard template that shows a subscription
 
 ### Camera
-Dashboard controls that interacts with an Axis camera using the Axis device node
+Dashboard controls that interacts with an Axis camera using the Axis device node.  Double-click the node to set camera address, credentials, select the desired operation and desired output format.  The info tabs includes more information of inputs and outputs.
+
   - Show snapshot
   - Show Camera properies
   - Slider to control color level
