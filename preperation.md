@@ -14,7 +14,7 @@ sudo curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID
 ```
 ## Add the Docker official repos
 ```
-sudo echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+sudo -i echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 ```
 ## Install Docker
 ```
