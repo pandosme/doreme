@@ -17,7 +17,7 @@ services:
     restart: always
     environment:
       - MONGODB_AUTH=false
-#Switch below depending on running on a Linux (mongo:latest) or RasPi (webhippie/mongodb
+#Switch below depending on running on a Linux (mongo:latest) or RasPi (webhippie/mongodb)
     image: webhippie/mongodb
 #    image: mongo:latest
     user: '0'
