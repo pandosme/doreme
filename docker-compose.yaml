@@ -7,7 +7,6 @@ services:
     user: '0'    
     ports:
       - '1880:1880'
-#      - '443:1880'
     volumes:
       - ./nodered:/data
     links:
@@ -18,10 +17,12 @@ services:
     restart: always
     environment:
       - MONGODB_AUTH=false
+#Switch below depending on running on a Linux (mongo:latest) or RasPi (webhippie/mongodb
     image: webhippie/mongodb
+#    image: mongo:latest
     user: '0'
     volumes:
-      - ./db:/var/lib/mongodb
+      - ./mongo:/var/lib/mongodb
     ports:
       - '27017:27017'
   broker:
@@ -32,10 +33,8 @@ services:
     ports:
       - '1883:1883'
       - '1884:1884'
-#      - '8883:8883'
     volumes:
       - ./mosquitto:/mosquitto
-#      - ./certs:/certs
 volumes:
   certs:
-#  local:
+

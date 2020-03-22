@@ -1,1 +1,5 @@
-
+mongo/
+nodered/.config.json
+nodered/.config.json.backup
+nodered/.flows.json.backup
+nodered/flows_cred.json
