@@ -41,3 +41,4 @@ Note: if you want to see all debug output from containers, remove the '-d'.  The
 ```
 sudo docker-compose down
 ```
+Note that you may need to remove mongo/mongo.lock when you restart the containers.
