@@ -1,5 +1,5 @@
 # Install Docker
-Docker is not pasrt of the official Debian repo.  Before installing Docker you need to install the repository definitions for apt-get.
+Docker is not part of the official Debian repo.  Before installing Docker you need to install the repository definitions for apt-get.
 
 ## Install some required packages
 ```
