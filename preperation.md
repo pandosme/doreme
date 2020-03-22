@@ -46,7 +46,7 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
-#Install GIT
+# Install GIT
 ```
 sudo apt-get install git
 ```
