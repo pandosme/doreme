@@ -14,7 +14,9 @@ sudo curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID
 ```
 ## Add the Docker official repos
 ```
-sudo -i echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+sudo -i
+echo "deb [arch=armhf] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+logout
 ```
 ## Install Docker
 ```
@@ -28,21 +30,23 @@ Install pip:
 ```
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
 ```
-Now install docker-compose
+Install docker-compose
 ```
+sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+sudo pip3 install cryptography
 sudo pip3 install docker-compose
 ```
 
 # Start Docker
 ```
-systemctl enable docker
+sudo systemctl enable docker
 ```
 
 ```
-systemctl start docker
+sudo systemctl start docker
 ```
 
 #Install GIT
 ```
-apt-get install git
+sudo apt-get install git
 ```
